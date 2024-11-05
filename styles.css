@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9eff6; /* Light blue background */
+}
+
+h1, h2, h4 {
+    color: #1c3d5a; /* Dark blue for headings */
+}
+
+.popup {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.popup-content {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    width: 90%;
+    max-width: 420px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+input[type="text"],
+input[type="file"],
+input[type="email"],
+input[type="password"] {
+    display: block;
+    margin: 12px auto;
+    padding: 12px;
+    width: 85%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #007bff; /* FaceDash Primary Blue */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+#image-upload-form {
+    margin-bottom: 25px;
+}
+
+#upload-animation {
+    font-weight: bold;
+    color: #007bff;
+}
+
+#upload-alert {
+    margin-top: 10px;
+    font-weight: bold;
+    color: green;
+}
+
+/* Image and Video Gallery Styles */
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.media-card {
+    background-color: #ffffff;
+    border: 1px solid #dfe6ed;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.media-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.media-card img,
+.media-card video {
+    width: 100%;
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.media-card p {
+    margin-top: 8px;
+    color: #1c3d5a;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Additional styling for text alignment and spacing */
+.media-card p strong {
+    display: block;
+    margin-bottom: 4px;
+}
